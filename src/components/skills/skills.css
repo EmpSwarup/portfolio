@@ -1,5 +1,9 @@
+.skills__section {
+  padding-top: 120px;
+}
+
 .skills__container {
-  display: g;
+  display: grid;
   grid-template-columns: repeat(2, 350px);
   column-gap: 3rem;
   justify-content: center;

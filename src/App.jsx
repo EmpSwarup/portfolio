@@ -7,6 +7,10 @@ import PreLoader from "./components/preloader/PreLoader";
 import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
 import Qualifications from "./components/qualification/Qualifications";
+import Certifications from "./components/certifications/Certifications";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import ScrollUp from "./components/scrollup/ScrollUp";
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
@@ -20,7 +24,11 @@ function App() {
         <Skills />
         <Services />
         <Qualifications />
+        <Certifications />
+        <Contact />
       </main>
+      <Footer />
+      <ScrollUp />
       <Analytics />
     </>
   );

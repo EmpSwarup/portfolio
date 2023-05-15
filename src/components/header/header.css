@@ -55,7 +55,7 @@
     top: initial;
     bottom: 0;
   }
-  ss .nav {
+  .nav {
     height: var(--header-height);
   }
 
