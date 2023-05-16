@@ -7,6 +7,7 @@ import PreLoader from "./components/preloader/PreLoader";
 import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
 import Qualifications from "./components/qualification/Qualifications";
+import Work from "./components/work/Work";
 import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -24,6 +25,7 @@ function App() {
         <Skills />
         <Services />
         <Qualifications />
+        <Work />
         <Certifications />
         <Contact />
       </main>

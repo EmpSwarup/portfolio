@@ -9,9 +9,9 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color: hsl(var(--hue), var(--sat), 0%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --text-color: hsl(var(--hue), var(--sat), 0%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
 
@@ -48,6 +48,15 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfdb1JtnKITppOI_IvcXXDNrsc.woff2")
+    format("woff2");
+  font-display: swap;
 }
 
 /* Responsive typography */
