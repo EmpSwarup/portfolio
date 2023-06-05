@@ -111,7 +111,7 @@ const Qualifications = () => {
               <div>
                 <h3 className="qualification__title">Graphics Designer</h3>
                 <span className="qualification__subtitle">
-                  DealAyo - Online SHopping
+                  DealAyo - Online Shopping
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender-alt"></i> Oct 2022 - Dec 2022
