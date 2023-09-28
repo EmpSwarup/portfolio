@@ -132,7 +132,7 @@ const Qualifications = () => {
               </div>
               <div>
                 <h3 className="qualification__title">
-                  Searching of Opportunities
+                  Mutliple College and Personal Projects
                 </h3>
                 <span className="qualification__subtitle">Nepal</span>
                 <div className="qualification__calender">

@@ -14,9 +14,9 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            I am an Engineering student with interest in Web Development and
-            experience in Graphics Design. I am currently living in Lalitpur,
-            Nepal. I am 23 years old.
+            I am a 23 old with interest in Web Development and experience in
+            Graphics Design. I am currently living in Lalitpur, Nepal. I studied
+            computer engineering in NCIT.
           </p>
           <a download="" href={CV} className="button button__flex">
             Download CV

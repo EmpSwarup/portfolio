@@ -59,8 +59,8 @@ const Data = () => {
       <h3 className="home__subtitle">Web Developer & Designer</h3>
 
       <p className="home__description">
-        I'm Web Developer and Graphics Designer from Nepal, currently studying
-        Computer Engineering at NCIT.
+        I'm Web Developer and Graphics Designer from Nepal. I am interested in
+        programming, designing, gaming and travelling.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
