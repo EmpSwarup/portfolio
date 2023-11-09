@@ -6,6 +6,8 @@ import Work5 from "../../assets/work5.jpg";
 import Work6 from "../../assets/work6.jpg";
 import Work7 from "../../assets/work7.jpg";
 import Work8 from "../../assets/work8.jpg";
+import Work9 from "../../assets/work9.png";
+import Work10 from "../../assets/work10.png";
 
 export const projectsData = [
   {
@@ -63,6 +65,20 @@ export const projectsData = [
     title: "HowzTheWeather",
     category: "reactjs",
     demoLink: "https://github.com/EmpSwarup/howztheweather",
+  },
+  {
+    id: 9,
+    image: Work9,
+    title: "Room Finder 2.0",
+    category: "reactjs",
+    demoLink: "https://github.com/nishantchy842/RoomFinder_2.0",
+  },
+  {
+    id: 10,
+    image: Work10,
+    title: "Article Summarizer",
+    category: "reactjs",
+    demoLink: "https://github.com/EmpSwarup/article-summarizer",
   },
 ];
 

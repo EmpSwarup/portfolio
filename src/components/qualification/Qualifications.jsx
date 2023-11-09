@@ -89,7 +89,7 @@ const Qualifications = () => {
                   Nepal College of Information Technology
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2018 - Present
+                  <i className="uil uil-calendar-alt"></i> 2018 - 2023
                 </div>
               </div>
 
@@ -132,7 +132,7 @@ const Qualifications = () => {
               </div>
               <div>
                 <h3 className="qualification__title">
-                  Mutliple College and Personal Projects
+                  Searching for opportunities
                 </h3>
                 <span className="qualification__subtitle">Nepal</span>
                 <div className="qualification__calender">

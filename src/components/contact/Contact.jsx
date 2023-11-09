@@ -8,12 +8,31 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_m37zesl",
-      "template_mlqsb1d",
-      form.current,
-      "yxifzbwCv2VuZ7Ts-"
-    );
+    const name = form.current.name.value;
+    const email = form.current.email.value;
+    const message = form.current.message.value;
+
+    if (!name || !email || !message) {
+      // Handle the case where any of the fields are empty
+      alert("Please fill out all fields");
+      return;
+    }
+
+    // Your existing EmailJS logic
+    emailjs
+      .sendForm(
+        "service_m37zesl",
+        "template_mlqsb1d",
+        form.current,
+        "yxifzbwCv2VuZ7Ts-"
+      )
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
     e.target.reset();
   };
   return (
@@ -106,7 +125,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex">
+            <button className="button button--flex" type="submit">
               Send Message
               <svg
                 className="button__icon"
