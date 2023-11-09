@@ -1,20 +1,25 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from "react-modal";
 import "./contact.css";
+
+Modal.setAppElement("#root"); // Set the root element for accessibility
 
 const Contact = () => {
   const form = useRef();
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Add validation here
     const name = form.current.name.value;
     const email = form.current.email.value;
     const message = form.current.message.value;
 
     if (!name || !email || !message) {
-      // Handle the case where any of the fields are empty
-      alert("Please fill out all fields");
+      // Open the modal if any field is empty
+      setIsModalOpen(true);
       return;
     }
 
@@ -35,6 +40,11 @@ const Contact = () => {
 
     e.target.reset();
   };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contact</h2>
@@ -148,6 +158,52 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      {/* Stylish modal with reduced padding */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Alert Modal"
+        style={{
+          content: {
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "#fff",
+            width: "200px", // Adjust the width as needed
+            height: "180px", // Adjust the height as needed
+            padding: "10px", // Adjust the padding as needed
+            borderRadius: "10px",
+            boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+            textAlign: "center",
+          },
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            zIndex: 1000,
+          },
+        }}
+      >
+        <div>
+          <h2 style={{ color: "#e74c3c" }}>Oops!</h2>
+          <p style={{ marginBottom: "20px", fontSize: "14px" }}>
+            It seems you forgot to fill out all fields.
+          </p>
+          <button
+            onClick={closeModal}
+            style={{
+              backgroundColor: "#3498db",
+              color: "#fff",
+              padding: "8px 16px", // Adjust the padding as needed
+              borderRadius: "5px",
+              cursor: "pointer",
+              transition: "background-color 0.3s",
+            }}
+          >
+            Got it!
+          </button>
+        </div>
+      </Modal>
     </section>
   );
 };
