@@ -7,18 +7,42 @@ import Info from "./Info";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <h2 className="section__title" data-aos="fade-right">
+        About Me
+      </h2>
+      <span
+        className="section__subtitle"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
+        My Introduction
+      </span>
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <img
+          src={AboutImg}
+          alt=""
+          className="about__img"
+          data-aos="zoom-out"
+          data-aos-delay="300"
+        />
         <div className="about__data">
           <Info />
-          <p className="about__description">
+          <p
+            className="about__description"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             I am a 23 old with interest in Web Development and experience in
             Graphics Design. I am currently living in Lalitpur, Nepal. I studied
             computer engineering in NCIT.
           </p>
-          <a download="" href={CV} className="button button__flex">
+          <a
+            download=""
+            href={CV}
+            className="button button__flex"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             Download CV
             <svg
               className="button__icon"

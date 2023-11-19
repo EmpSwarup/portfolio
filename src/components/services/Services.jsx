@@ -10,10 +10,22 @@ const Services = () => {
 
   return (
     <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What I Offer</span>
+      <h2 className="section__title" data-aos="fade-right">
+        Services
+      </h2>
+      <span
+        className="section__subtitle"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
+        What I Offer
+      </span>
       <div className="services__container container grid">
-        <div className="services__content">
+        <div
+          className="services__content"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div>
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
@@ -61,7 +73,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="services__content">
+        <div
+          className="services__content"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
@@ -113,7 +129,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="services__content">
+        <div
+          className="services__content"
+          data-aos="fade-up"
+          data-aos-delay="700"
+        >
           <div>
             <i className="uil uil-edit services__icon"></i>
             <h3 className="services__title">

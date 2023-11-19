@@ -10,10 +10,22 @@ const Qualifications = () => {
 
   return (
     <section className="qualification section">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My Personal Journey</span>
+      <h2 className="section__title" data-aos="fade-left">
+        Qualification
+      </h2>
+      <span
+        className="section__subtitle"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
+        My Personal Journey
+      </span>
 
-      <div className="qualification__container container">
+      <div
+        className="qualification__container container"
+        data-aos="flip-down"
+        data-aos-delay="200"
+      >
         <div className="qualification__tabs">
           <div
             className={
