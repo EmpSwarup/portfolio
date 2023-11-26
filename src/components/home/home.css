@@ -212,6 +212,10 @@
   .home__subtitle {
     margin-left: 35px;
   }
+
+  .home__data {
+    width: 90vw;
+  }
 }
 
 /* For small devices */
