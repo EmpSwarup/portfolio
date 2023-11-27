@@ -9,16 +9,8 @@ import { Pagination } from "swiper";
 const Certifications = () => {
   return (
     <section className="certification container section" id="certifications">
-      <h2 className="section__title" data-aos="fade-left">
-        My Certifications
-      </h2>
-      <span
-        className="section__subtitle"
-        data-aos="fade-left"
-        data-aos-delay="200"
-      >
-        Certificates
-      </span>
+      <h2 className="section__title">My Certifications</h2>
+      <span className="section__subtitle">Certificates</span>
 
       <Swiper
         className="certifications__container"
@@ -35,9 +27,6 @@ const Certifications = () => {
           },
         }}
         modules={[Pagination]}
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-delay="400"
       >
         {Data.map(({ id, image, title, description }) => {
           return (

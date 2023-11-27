@@ -26,7 +26,7 @@ const Works = () => {
   };
   return (
     <div>
-      <div className="work__filters" data-aos="fade-right" data-aos-delay="300">
+      <div className="work__filters">
         {projectsNav.map((item, index) => {
           return (
             <span
@@ -42,11 +42,7 @@ const Works = () => {
         })}
       </div>
 
-      <div
-        className="work__container container grid"
-        data-aos="zoom-in-up"
-        data-aos-delay="200"
-      >
+      <div className="work__container container grid">
         {projects.map((item) => {
           return <WorkItems item={item} key={item.id} />;
         })}
