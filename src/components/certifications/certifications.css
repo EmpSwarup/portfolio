@@ -12,7 +12,6 @@
 
 .certification__img {
   width: 60px;
-  border-radius: 3rem;
   margin-bottom: var(--mb-1);
 }
 
@@ -26,6 +25,9 @@
   font-size: var(--small-font-size);
 }
 
+.certification__link {
+  color: var(--text-color) !important;
+}
 /* Swiper Class */
 .swiper-pagination-bullet {
   background-color: var(--text-color) !important;

@@ -10,7 +10,9 @@ const Certifications = () => {
   return (
     <section className="certification container section" id="certifications">
       <h2 className="section__title">My Certifications</h2>
-      <span className="section__subtitle">Certificates</span>
+      <span className="section__subtitle">
+        Visit my Linkedin for more about my Certificates
+      </span>
 
       <Swiper
         className="certifications__container"
@@ -28,12 +30,19 @@ const Certifications = () => {
         }}
         modules={[Pagination]}
       >
-        {Data.map(({ id, image, title, description }) => {
+        {Data.map(({ id, image, title, description, link }) => {
           return (
             <SwiperSlide className="certification__card" key={id}>
-              <img src={image} alt="" className="certification__img" />
-              <h3 className="certification__name">{title}</h3>
-              <p className="certification__description">{description}</p>
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="certification__link"
+              >
+                <img src={image} alt="" className="certification__img" />
+                <h3 className="certification__name">{title}</h3>
+                <p className="certification__description">{description}</p>
+              </a>
             </SwiperSlide>
           );
         })}
