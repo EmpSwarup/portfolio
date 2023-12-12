@@ -13,6 +13,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Footer />
       <ScrollUp />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
