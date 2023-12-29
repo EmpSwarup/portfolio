@@ -1,13 +1,28 @@
 import React, { useState } from "react";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ darkMode, toggleMode }) => {
   /*=============== Toggle Menu ===============*/
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 
+  const handleToggleMode = () => {
+    // Check if the menu is open, if yes, close it
+    if (Toggle) {
+      showMenu(false);
+    }
+
+    // Toggle the theme
+    document.documentElement.classList.toggle("dark-mode", !darkMode);
+
+    // If the menu was closed, toggle the menu
+    if (!Toggle) {
+      showMenu(!Toggle);
+    }
+  };
+
   return (
-    <header className="header">
+    <header className={`header ${darkMode ? "dark" : "light"}`}>
       <nav className="nav container">
         <a
           href="#"
@@ -95,6 +110,12 @@ const Header = () => {
                 }
               >
                 <i className="uil uil-message nav__icon"></i>Contact
+              </a>
+            </li>
+            <li className="nav__item">
+              <a onClick={() => toggleMode()} className="nav__link">
+                <i className="uil uil-moon nav__icon"></i>
+                {darkMode ? "Light Mode" : "Dark Mode"}
               </a>
             </li>
           </ul>

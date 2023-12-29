@@ -58,6 +58,7 @@
   --text-color: hsl(var(--hue), var(--sat), 0%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  background-color: var(--body-color);
 }
 
 .dark {
@@ -66,8 +67,9 @@
   --title-color: hsl(var(--hue), var(--sat), 95%);
   --title-color-dark: hsl(var(--hue), var(--sat), 70%);
   --text-color: hsl(var(--hue), var(--sat), 90%);
-  --body-color: hsl(var(--hue), var(--sat), 10%);
-  --container-color: #333; /* Adjust the container color for a dark background */
+  --body-color: #121212;
+  --container-color: #000000; /* Adjust the container color for a dark background */
+  background-color: var(--body-color);
 }
 
 @font-face {

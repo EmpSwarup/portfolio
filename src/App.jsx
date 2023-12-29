@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
@@ -16,11 +16,20 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
+  const storedDarkMode = localStorage.getItem("darkMode");
+  const [darkMode, setDarkMode] = useState(storedDarkMode === "true");
+
+  const toggleMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem("darkMode", newDarkMode);
+  };
+
   return (
     <>
       <PreLoader />
-      <Header />
-      <main className="main">
+      <Header darkMode={darkMode} toggleMode={toggleMode} />
+      <main className={`main ${darkMode ? "dark" : "light"}`}>
         <Home />
         <About />
         <Skills />
@@ -30,8 +39,8 @@ function App() {
         <Certifications />
         <Contact />
       </main>
-      <Footer />
-      <ScrollUp />
+      <Footer darkMode={darkMode} />
+      <ScrollUp darkMode={darkMode} />
       <Analytics />
       <SpeedInsights />
     </>

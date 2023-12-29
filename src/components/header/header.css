@@ -41,10 +41,21 @@
   display: none;
 }
 
+.nav__icon.uil-moon {
+  font-size: 1.2rem;
+}
+
 /* Active link */
 .active-link,
 .nav__link:hover {
   color: var(--title-color-dark);
+  cursor: pointer;
+}
+
+.dark .header {
+  background-color: var(--container-color);
+  color: var(--text-color);
+  /* dark mode styles */
 }
 
 /*=============== BREAKPOINTS ===============*/

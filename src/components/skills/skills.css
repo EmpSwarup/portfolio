@@ -51,7 +51,7 @@
   padding-right: 10px;
   justify-content: start; /* Align columns at the same position */
 }
-.skills .bx-badge-check {
+.bx-badge-check {
   font-size: 1rem;
   color: var(--title-color);
   margin-right: 0.5rem;
@@ -68,6 +68,7 @@
 
 .skills__level {
   font-size: var(--tiny-font-size);
+  color: var(--text-color);
 }
 
 /*=============== BREAKPOINTS ===============*/

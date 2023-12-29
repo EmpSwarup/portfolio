@@ -91,6 +91,7 @@
   font-size: var(--small-font-size);
   padding: 0 3.5rem;
   margin-bottom: var(--mb-2);
+  color: var(--text-color);
 }
 
 .services__modal-services {
@@ -110,6 +111,7 @@
 
 .services__modal-info {
   font-size: var(--small-font-size);
+  color: var(--text-color);
 }
 
 /* Active Modal */
