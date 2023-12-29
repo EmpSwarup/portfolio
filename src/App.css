@@ -50,6 +50,26 @@
   --z-modal: 1000;
 }
 
+.light {
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 0%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 0%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+}
+
+.dark {
+  --hue: 210; /* Adjust the hue for a different color scheme */
+  --sat: 20%; /* Adjust the saturation for a different color intensity */
+  --title-color: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 70%);
+  --text-color: hsl(var(--hue), var(--sat), 90%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: #333; /* Adjust the container color for a dark background */
+}
+
 @font-face {
   font-family: "Poppins";
   font-weight: 400;
