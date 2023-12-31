@@ -61,15 +61,17 @@
   background-color: var(--body-color);
 }
 
-.dark {
-  --hue: 210; /* Adjust the hue for a different color scheme */
-  --sat: 20%; /* Adjust the saturation for a different color intensity */
-  --title-color: hsl(var(--hue), var(--sat), 95%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 70%);
-  --text-color: hsl(var(--hue), var(--sat), 90%);
-  --body-color: #121212;
-  --container-color: #000000; /* Adjust the container color for a dark background */
-  background-color: var(--body-color);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hue: 210; /* Adjust the hue for a different color scheme */
+    --sat: 20%; /* Adjust the saturation for a different color intensity */
+    --title-color: hsl(var(--hue), var(--sat), 95%);
+    --title-color-dark: hsl(var(--hue), var(--sat), 70%);
+    --text-color: hsl(var(--hue), var(--sat), 90%);
+    --body-color: #121212;
+    --container-color: #000000; /* Adjust the container color for a dark background */
+    background-color: var(--body-color);
+  }
 }
 
 @font-face {
@@ -119,6 +121,8 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   overflow-x: hidden;
+  padding: 0px;
+  min-width: 100vw;
 }
 
 h1,
