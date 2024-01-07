@@ -259,3 +259,9 @@ img {
     margin-right: var(--mb-1);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
