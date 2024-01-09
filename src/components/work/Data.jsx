@@ -6,9 +6,9 @@ import Work5 from "../../assets/work5.jpg";
 import Work6 from "../../assets/work6.jpg";
 import Work7 from "../../assets/work7.jpg";
 import Work8 from "../../assets/work8.jpg";
-import Work9 from "../../assets/work9.png";
-import Work10 from "../../assets/work10.png";
-import Work11 from "../../assets/work11.png";
+import Work9 from "../../assets/work9.jpg";
+import Work10 from "../../assets/work10.jpg";
+import Work11 from "../../assets/work11.jpg";
 
 export const projectsData = [
   {
