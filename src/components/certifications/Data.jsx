@@ -1,5 +1,5 @@
-import Image1 from "../../assets/google.jpg";
-import Image2 from "../../assets/meta-resized.jpg";
+import Image1 from "../../assets/google.png";
+import Image2 from "../../assets/meta.png";
 
 export const Data = [
   {
