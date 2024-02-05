@@ -186,7 +186,9 @@ const Contact = () => {
       >
         <div>
           <h2 style={{ color: "#e74c3c" }}>Oops!</h2>
-          <p style={{ marginBottom: "20px", fontSize: "14px" }}>
+          <p
+            style={{ color: "#e74c3c", marginBottom: "20px", fontSize: "14px" }}
+          >
             It seems you forgot to fill out all fields.
           </p>
           <button

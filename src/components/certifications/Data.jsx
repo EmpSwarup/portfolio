@@ -5,10 +5,10 @@ export const Data = [
   {
     id: 1,
     image: Image2,
-    title: "Introduction to Front End Development",
+    title: "Meta Front-End Developer Specialization",
     description:
-      "The Introduction to Front End Development certificate and course by Meta equips learners with fundamental web development skills.",
-    link: "https://www.coursera.org/account/accomplishments/verify/N4A25XADQTHK",
+      "The Meta Front-End Developer Specialization specialization certificate and course by Meta equips learners with fundamental web development skills.",
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/AGRUHKNCAGC2",
   },
   {
     id: 2,
