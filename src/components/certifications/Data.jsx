@@ -1,5 +1,6 @@
 import Image1 from "../../assets/google.png";
 import Image2 from "../../assets/meta.png";
+import Image3 from "../../assets/calarts.png";
 
 export const Data = [
   {
@@ -12,6 +13,14 @@ export const Data = [
   },
   {
     id: 2,
+    image: Image3,
+    title: "UI / UX Design Specialization",
+    description:
+      "The UI / UX Design Specialization course by California Institude of Arts provides essential skills for design High-Impact User Experiences. Research, design, and prototype effective, visually-driven websites and apps.",
+    link: "https://www.coursera.org/account/accomplishments/specialization/YB4Q76ZUDRYC",
+  },
+  {
+    id: 3,
     image: Image1,
     title: "Foundations of UX Design",
     description:
