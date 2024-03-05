@@ -9,6 +9,9 @@ import Work8 from "../../assets/work8.jpg";
 import Work9 from "../../assets/work9.jpg";
 import Work10 from "../../assets/work10.jpg";
 import Work11 from "../../assets/work11.jpg";
+import Work12 from "../../assets/work12.jpg";
+import Work13 from "../../assets/work13.jpg";
+import Work14 from "../../assets/work14.jpg";
 
 export const projectsData = [
   {
@@ -41,27 +44,48 @@ export const projectsData = [
   },
   {
     id: 5,
+    image: Work12,
+    title: "SmartStudy UI Design",
+    category: "design",
+    demoLink: "https://www.figma.com/community/file/1322584021663498170/smartstudy",
+  },
+  {
+    id: 6,
+    image: Work13,
+    title: "LanceMeUP UI Design",
+    category: "design",
+    demoLink: "https://www.figma.com/community/file/1325370974085081817/lancemeup-landing-page",
+  },
+  {
+    id: 7,
+    image: Work14,
+    title: "EvoStore UI Design",
+    category: "design",
+    demoLink: "https://www.figma.com/community/file/1346497920601184822/evostore",
+  },
+  {
+    id: 8,
     image: Work5,
     title: "Graphics for Dealayo.com",
     category: "design",
     demoLink: "https://www.behance.net/swarupsapkota",
   },
   {
-    id: 6,
+    id: 9,
     image: Work2,
     title: "Tic Tac Toe",
     category: "javascript",
     demoLink: "https://github.com/EmpSwarup/tictactoe",
   },
   {
-    id: 7,
+    id: 10,
     image: Work3,
     title: "To-Do Lisit",
     category: "webapp",
     demoLink: "https://github.com/EmpSwarup/todo-list-react",
   },
   {
-    id: 8,
+    id: 11,
     image: Work4,
     title: "Meme Generator",
     category: "javascript",
@@ -69,21 +93,21 @@ export const projectsData = [
   },
 
   {
-    id: 9,
+    id: 12,
     image: Work6,
     title: "3D Numpad",
     category: "design",
     demoLink: "https://github.com/EmpSwarup/numpad-spline",
   },
   {
-    id: 10,
+    id: 13,
     image: Work7,
     title: "Frogs in a pond",
     category: "design",
     demoLink: "https://github.com/EmpSwarup/frogs-spline",
   },
   {
-    id: 11,
+    id: 14,
     image: Work8,
     title: "HowzTheWeather",
     category: "webapp",
