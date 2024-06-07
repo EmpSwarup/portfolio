@@ -54,7 +54,7 @@ const Footer = ({ darkMode }) => {
         </div>
 
         <span className="footer__copy">
-          &#169; Swarup Sapkota. All rigths reserved
+          &#169; Swarup Sapkota. All rights reserved.
         </span>
       </div>
     </footer>
