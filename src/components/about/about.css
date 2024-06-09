@@ -6,6 +6,8 @@
 
 .about__img {
   width: 350px;
+  height: 80%;
+  object-fit: cover;
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -60,6 +62,7 @@
 
   .about__img {
     width: 220px;
+    height: 100%;
   }
 
   .about__box {
